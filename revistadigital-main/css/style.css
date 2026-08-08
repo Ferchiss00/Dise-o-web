@@ -1,4 +1,5 @@
-* { /* (*) selector universal afecta a todos los nodos de DOM */
+/* Reset y Configuración Base */
+* {
     box-sizing: border-box;
 }
 
@@ -9,6 +10,7 @@ body {
     color: #333;
 }
 
+/* Header y Navegación */
 header, footer {
     background-color: #0D47A1;
 }
@@ -41,7 +43,7 @@ nav li {
 }
 
 nav li:hover {
-    
+    /* transform: translateY(-2px); */
     background-color: #222;
 }
 
@@ -53,7 +55,7 @@ nav a {
     font-weight: bold;
 }
 
-/* Pseudo-clases interactivas en Navegaciom*/
+/* Pseudo-clases interactivas en Navegación */
 nav a:hover,
 nav a:focus {
     color: #90CAF9;
@@ -64,20 +66,20 @@ nav a:active {
     color: #E3F2FD;
 }
 
-/* Estructura principal */
+/* Estructura Principal */
 main {
     max-width: 1200px;
     margin: auto;
     padding: 1.5rem 1rem;
 }
 
-/* Tabla Responsiva */
+/* Sección de Tabla Responsiva */
 .table-section {
     margin-top: 2rem;
 }
 
 .table-container {
-    overflow-x: auto; /* Permite scroll horizontal en tel si es necesario */
+    overflow-x: auto; /* Permite scroll horizontal en móviles si es necesario */
 }
 
 .data-table {
@@ -113,7 +115,7 @@ main {
     transition: background-color 0.25s ease;
 }
 
-/* Contenedor Principal y Articulos */
+/* Contenedor Principal y Artículos */
 .container {
     max-width: 1200px;
     margin: 1rem auto;
@@ -173,7 +175,7 @@ aside {
     max-width: 100%;
 }
 
-/* Btn interactivo con pseudo-clases */
+/* Botón interactivo con pseudo-clases */
 .btn-read {
     display: inline-block;
     margin-top: 0.5rem;
@@ -199,7 +201,7 @@ footer {
     text-align: center;
 }
 
-/* Media Queries para Dise;o Fluido */
+/* Media Queries para Diseño Fluido */
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -225,4 +227,67 @@ footer {
         padding: 8px 10px;
         font-size: 0.85rem;
     }
+}
+
+
+
+
+/* FORMULARIO */
+
+.formulario-contenedor {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1)
+}
+
+.formulario-contenedor .formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contenedor .formulario h3 {
+    font-weight: bold;
+    color: #333;
+}
+
+.formulario-contenedor .formulario .formulario-control {
+    padding: 5px;
+    display: flex;
+    width: 100%;
+}
+
+.formulario-contenedor .formulario .formulario-control .formulario-control-name {
+    flex: 1;
+    width: 100%;
+}
+
+.formulario-contenedor .formulario .formulario-control .formulario-campo {
+    background: #f2f2f2;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    width: 50%;
+    font-size: 11pt;
+    color: #333;
+}
+
+.formulario-contenedor .formulario-pie {
+    width: 100%;
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 20px 0px;
+}
+
+.formulario-contenedor .formulario-enviar {
+    padding: 20px 10px;
+    width: 280px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    background: #03132a;
+    font-weight: bold;
 }
